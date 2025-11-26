@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        input::placeholder{
+            color: rgb(212, 98, 98);
+            font-style: italic;
+            font-size: 8;
+        }
+        label{
+            color: rgb(207, 240, 232);
+            font-size: 20;
+
+        }
+        form{
+            height: 300px;
+            width: 330px;
+            border: 1px ridge rgb(8, 8, 8);
+            text-align: center;
+            padding-top: 30px;
+            border-radius: 8px;
+            align-items: center;
+            background-image: url("images1.png");
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" size="20" placeholder="Enter Your Name"><br>
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname" name="lname" size="20" placeholder="Enter Your Lastname"><br>
+        <label for="email">email-id:</label><br>
+        <input type="email" id="email" name="email" size="20" placeholder="Enter Your Email-id"><br>
+        <label for="phone no.">phone number:</label><br>
+        <input type="number" id="phone" value="phone" size="20" placeholder="Enter Your Phone no."><br>
+        <label for="password">password:</label><br>
+        <input type="password" id="password" value="password" size="20"><br>
+        <label for="birthdate">birthdate</label><br>
+        <input type="date" id="birthdate" value="birthdate"><br>
+        <input type="checkbox" id="select" name="select"><br>
+        <input type="image" src="img1_submit.gif" alt="submit" width="28" height="28">
+    </form>
+</body>
+</html>

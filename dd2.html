@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dbtn{
+            background-color: rgb(134, 185, 31);
+            border: none;
+            padding: 20px;
+            min-width: 200px;
+        }
+        .dd{
+            position: relative;
+        }
+
+        div:hover .dbtn{
+            background-color: forestgreen
+        }
+        .dd1{
+            display: none;
+            background-color: darkseagreen;
+            position: absolute;
+            min-width: 200px;
+        }
+        .dd1 a{
+            color: azure;
+            display: block;
+            text-decoration: none;
+            box-shadow: 0px 8px 16px 0px, black;
+        }
+
+        div:hover .dd1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="dd">
+        <button class="dbtn">MENU</button>
+        <div class="dd1">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#help">Help</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

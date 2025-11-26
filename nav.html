@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        li a:hover{
+            background-color: rgb(24, 8, 243);
+        }
+
+        .active{
+            background-color: green;
+        }
+
+        span.a{
+            border: 2px solid crimson;
+            padding: 2px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+    </ul>
+
+    <p> i like <span class="a">pizza</span> a lot.</p>
+</body>
+</html>

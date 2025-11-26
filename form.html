@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORK</title>
+    
+    <style>
+        input:focus {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <!--info-->
+    <form action="/action_page.php">
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname"  value="fname"><br>
+        <label for="lname">last name:</label><br>
+        <input type="text" id="lname" name="lname" value="lname"><br>
+        <input type="button" value="submit">
+    </form>
+
+    <!--buttons-->
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="java" name="fav_language" value="JAVA">
+        <label for="java">JAVA</label><br>
+        <input type="checkbox" id="car" name="car" value="BMW">
+        <label for="car">BMW</label>
+    </form>
+
+    <!--select-->
+    <form>
+        <label for="car">choose a car:</label>
+        <select id="car" name="cars" size="1">
+            <option value="BMW">bmw</option>
+            <option value="bike" selected>bike</option>
+            <option value="activa">activa</option>
+        </select>
+        <button type="submit">submit</button><br><br>
+    </form>
+
+    <!--fieldset-->
+    <form autocomplete="on
+    ">
+        <legend>personal information</legend>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" min="1" max="10"><br> <br>
+        <button type="submit" onclick="alert('HELLO WORLD!')">submit</button>
+    </form><br> <br>
+
+    <!--textarea-->
+    <form>
+        <textarea name="message" rows="9" cols="20">the cat was playing in the garden</textarea><br><br>
+        <input type="submit">
+    </form><br><br>
+
+    <!--dataliost-->
+    <form>
+        <input list="cars" name="cars">
+        <datalist id="cars">
+            <option value="bmw">
+            <option value="ferrari">
+            <option value="gt">
+        </datalist>
+        <button type="submit">submit</button>
+    </form><br><br>
+
+    <!--date-->
+    <form>
+        <label for="datemax">enter a date before 1980-01-01</label><br>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31">
+    </form>
+</html>
