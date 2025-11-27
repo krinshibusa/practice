@@ -3,86 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISTS</title>
-    <style>
-        ul{
-            background-color: hotpink;
-            padding: 20px;
-        }
-        ul li{
-            list-style-type: disc;
-            list-style-position: inside;
-            background-color: rgb(4, 139, 4);
-        }
-
-        ol.d{list-style: upper-alpha;}
-        ol.e{list-style: lower-alpha;}
-        ol.f{list-style: upper-roman;}
-        ol.g{list-style: lower-roman;}
-        ol.h{list-style: decimal;}
-        ol.i{list-style: upper-latin;}
-        ol.j{list-style: lower-greek;}
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <ul class="a">
-        <li>apple</li>
-        <li>banana</li>
-        <li>guava</li>
-    </ul>
+    <div class="container mt-3">
+        <h2>List Of Subject.</h2>
+        <ul class="list-group list-group-numbered list-group-item-primary">
+            <li class="list-group-item list-group-item-action">Science</li>
+            <li class="list-group-item list-group-item-action">Maths</li>
+            <li class="list-group-item list-group-item-action">Gujrati</li>
+            <li class="list-group-item list-group-item-action">English
+            </li>
+            
+        </ul><br><br>
 
-     <ul class="b">
-        <li>apple</li>
-        <li>banana</li>
-        <li>guava</li>
-    </ul>
+        <h2>List of subject's book</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">English
+                <span class="badge bg-success rounded-pill">10</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Science
+                <span class="badge bg-success rounded-pill">15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Gujrati
+                <span class="badge bg-success rounded-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">Maths
+                <span class="badge bg-success rounded-pill">11</span>
+            </li>
+        </ul><br>
 
-     <ul class="c">
-        <li>apple</li>
-        <li>banana</li>
-        <li>guava</li>
-    </ul>
 
-    <ol class="d">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="e">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="f">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="g">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="h">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="i">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
-
-     <ol class="j">
-        <li>app</li>
-        <li>software</li>
-        <li>data</li>
-    </ol>
+        <h3>Student list</h3>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> Name</button>
+            <ul class="dropdown-menu">
+                <li><h5 class="dropdown-header">dropdown header 1</h5></li>
+                <li><a class="dropdown-item" href="#">Maya</a></li>
+                <li><a class="dropdown-item" href="#">Zara</a> </li>
+                <li><a class="dropdown-item" href="#">Ananya </a> </li>
+                <li><a class="dropdown-item" href="#"> Kavya </a></li>
+                <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+                <li><a class="dropdown-item" href="#">Aman</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
-</html
+</html>
+
+
+
