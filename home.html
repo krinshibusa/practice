@@ -3,37 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITDC</title>
-    <link rel="stylesheet" href="style.css">
 
-
+    <title>Log-in</title>
+    <style>
+        body{
+            width: 585px;
+            height: 500px;
+            border: 1px solid #1d3b55;
+            border-radius: 8px;
+            align-items: center;
+            box-shadow: 4px 4px gainsboro;
+        }
+        .b{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            background-color: #12304b;
+            height: 500px; 
+            border-radius: 8px;
+        }    
+        .box1{
+            text-align: center;
+            width: 295px;
+            border-radius: 8px;
+            border: 1px solid #12304b;
+            margin: 10px;
+            padding-bottom: 30px;
+            height: 210px;
+            margin-top: 140px;
+            box-shadow: 6px 6px #12304b ;
+            background-color: white;
+        }
+        .container, .box{
+            height: 500px;
+            flex-direction: raw;
+        }
+        .box {
+           width: 400px;
+           background-color:rgb(246, 246, 255);
+           border-radius: 8px;
+        }
+       
+        input[type=email], [type=password]{
+            margin: 10px;
+            border-radius: 12px;
+            height: 20px;
+            padding-left: 10px;
+        }
+        input[type=email]:hover, [type=password]:hover{
+            background-color: #12304b;
+            color: whitesmoke;
+        }
+        button{
+            border-radius: 12px;
+            width: 175px;
+            height: 25px;
+            background-color:#12304b;
+            margin: 10px;
+            color: white;
+            box-shadow: 4px 4px rgb(212, 226, 228);
+        }
+        button:hover {
+            background-color: rgb(212, 226, 228);
+            color: black;
+        }
+        img{
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        .container{
+            text-align: center;
+            margin-right: 20px;
+            padding: 30px;
+            margin-top: 170px; 
+            color: whitesmoke;
+            width: 200px;
+        }
+        h2{
+            text-decoration: underline black;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome To ITDC!</h1>
-    </header>
+    <div class="b">
     <div class="container">
-        <div class="container1">
-            <table>
-                <tr>
-                    <td class="box1">box1</td>
-                    <td class="box2">box2</td>
-                    <td class="box3">box3</td>
-                </tr>
-                <tr>
-                    <td class="box4">box4</td>
-                    <td class="box5">box5</td>
-                    <td class="box6">box6</td>
-                </tr>
-            </table>
-        </div>
+        <img src="icon.png" alt="icon" width="180px" height="180px">
+        <h1><strong>WELCOME!</strong></h1>
+        <p>Please log-in to see website.</p>
+    </div>
 
-        <div class="container2">
-            <div class="box7">
-                <p>Manager</p>
-            </div>
+    <div class="box">
+        <div class="box1">
+            <h2>Log-in</h2>
+            <form>
+                <lable for="Email"></lable><br>
+                <input type="email" name="email" placeholder="Your Email..." required><br>
+                <label for="password"></label>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit">LOG-IN</button>
+            </form>
         </div>
     </div>
-    
+    </div>
 </body>
 </html>
